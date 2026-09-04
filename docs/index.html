@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pornalizer Connect — WordPress Video Sync Plugin</title>
+<meta name="description" content="Embed and sync video content from Pornalizer into WordPress — live grid, lightbox player, AJAX search, and automatic WP-Cron sync.">
+<style>
+  :root{
+    --bg:#0b0d12; --panel:#12151c; --border:#242938; --text:#e7e9ee;
+    --muted:#9aa2b1; --accent:#6ea8fe; --accent2:#8b7bf0;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f7f8fa; --panel:#ffffff; --border:#e4e7ee; --text:#1a1d24; --muted:#5b6272; --accent:#3b6fe0; --accent2:#6a4fd8; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+  .wrap{max-width:860px;margin:0 auto;padding:72px 24px 96px}
+  .badge{display:inline-block;font-size:13px;color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:4px 12px;margin-bottom:24px}
+  h1{font-size:clamp(28px,5vw,44px);margin:0 0 12px;letter-spacing:-0.02em;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lede{font-size:19px;color:var(--muted);max-width:640px;margin:0 0 36px}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:56px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent}
+  .btn-primary{background:var(--accent);color:#08101f}
+  .btn-secondary{background:transparent;color:var(--text);border-color:var(--border)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:56px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:20px}
+  .card h3{margin:0 0 8px;font-size:16px}
+  .card p{margin:0;color:var(--muted);font-size:14px}
+  .req{color:var(--muted);font-size:14px}
+  footer{color:var(--muted);font-size:13px;border-top:1px solid var(--border);padding-top:24px;margin-top:24px}
+  a{color:var(--accent)}
+  code{background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:2px 6px;font-size:0.9em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">v1.0.0 · GPL-2.0-or-later</span>
+  <h1>Pornalizer Connect</h1>
+  <p class="lede">A WordPress plugin that embeds and syncs video content from Pornalizer — live grid, lightbox player, AJAX search, and automatic background sync.</p>
+
+  <div class="cta">
+    <a class="btn btn-primary" href="https://github.com/2034network/pornalizer-connect/releases/latest">Download latest release</a>
+    <a class="btn btn-secondary" href="https://github.com/2034network/pornalizer-connect">View on GitHub</a>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Live video grid</h3>
+      <p>Drop-in shortcode — no manual embedding required.</p>
+    </div>
+    <div class="card">
+      <h3>Lightbox player</h3>
+      <p>Clean in-page playback, no redirect off your site.</p>
+    </div>
+    <div class="card">
+      <h3>AJAX search</h3>
+      <p>Instant client-side filtering across your synced catalog.</p>
+    </div>
+    <div class="card">
+      <h3>Auto-sync</h3>
+      <p>WP-Cron keeps your catalog current, with an optional drip mode.</p>
+    </div>
+    <div class="card">
+      <h3>Signed embed links</h3>
+      <p>HMAC-SHA256 signed, 2-hour expiry, domain-bound — no hotlinking.</p>
+    </div>
+    <div class="card">
+      <h3>Simple setup</h3>
+      <p>Upload the zip, activate, connect. That's it.</p>
+    </div>
+  </div>
+
+  <p class="req">Requires WordPress 5.8+ and PHP 7.4+.</p>
+
+  <footer>
+    <a href="https://github.com/2034network/pornalizer-connect">Source</a> ·
+    <a href="https://github.com/2034network/pornalizer-connect/blob/main/CHANGELOG.md">Changelog</a> ·
+    <a href="https://github.com/2034network/pornalizer-connect/blob/main/LICENSE">License</a>
+  </footer>
+</div>
+</body>
+</html>
